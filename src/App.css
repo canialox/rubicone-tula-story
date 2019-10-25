@@ -1,22 +1,94 @@
-.App {
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html, body { /* Для всей странице по умолчанию подключаем шрифт, высоту и цвет фона */
+  font-family: "Segoe UI", Arial, sans-serif;
+  height: 100%;
+}
+
+/*> > > > > > > > > > > > > > > > > > > > > > > > > content / содержимое / главная страница < < < < < < < < < < < < < < < < < < < < < < <*/
+/*> > > > > > > > > > > страница-карта  < < < < < < < < < < < < < <*/
+.map-window {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 250px;
+}
+#map {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+
+/*------------------------------------- логотип -----------------------------*/
+.border {
+  height: 70px;
+  width: 100%;
+  background: linear-gradient(22.5deg, #231a60, #be246b, #fd9e14);
+  border-radius: 0 0 15px 15px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.logo {
+  height: 65px;
+  width: 240px;
+  margin: 0 5px 5px 5px;
+  background: #fff;
+  border-radius: 0 0 15px 15px;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.logo p{
+  font-size: 40px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+
+  background: linear-gradient(90deg, #231a60, #be246b, #fd9e14);
+  background-clip: text;  /* подробнее про background-clip */ 
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
-.App-link {
-  color: #09d3ac;
+
+
+/*----------------------------------- Форма поиска --------------------------*/
+
+.map-window-form {
+  height: 40px;
+  width: 100%;
+  margin-top: 10px;
+  background: linear-gradient(22.5deg, #231a60, #be246b, #fd9e14);
+  border-radius: 15px;
+}   
+
+.form {
+padding:5px;
+}
+
+.form input[type="search"] {
+height: 30px;
+width: 240px;
+padding: 10px 40px 10px 10px;
+border-radius: 10px;
+border: none;
+outline: none;
+}
+
+.form input[type="submit"] {
+height: 30px;   
+width: 30px;
+position: relative;
+left: 210px;
+top: -30px;
+border: none;
+outline: none;
+
+background: url(https://i.ya-webdesign.com/images/search-svg-5.png) no-repeat;
+background-size: 20px 20px;
+background-position-y: center ;
+background-position-x: center;
 }

@@ -4,21 +4,28 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="main">
+      <div class="main-inner">
+        <div class="map-window">
+
+          <div class="border">
+            <div class="logo">
+                  <p>TulStory</p>
+            </div>
+          </div>
+
+          <div class="map-window-form">
+            <form class="form">
+              <p>
+                <input type="search" name="search" placeholder="Поиск по сайту"/>
+                <input type="submit" value=""/>
+              </p>
+            </form>
+          </div>     
+        </div>
+
+          <div id="map"></div>
+      </div>
     </div>
   );
 }
