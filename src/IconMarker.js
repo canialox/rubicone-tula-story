@@ -11,32 +11,21 @@ const CustomIcon = Icon.extend({
 });
 
 export const IconMarker = ({
-  lng,
   lat,
+  lng,
   onClick,
   imageURL,
   className,
   ...restProps
-}) => (
-  <Marker
-    position={[lng, lat]}
-    onClick={onClick}
-    icon={
-      new CustomIcon({
-        iconUrl: require('./IconMarker.png')
-      })
-    }
-    {...restProps}
-  />
-);
+}) => {
+        return (<Marker position={[lat, lng]} onClick={onClick} icon={new CustomIcon({
+            iconUrl: require('./IconMarker.png')
+        })} {...restProps} />);
+    };
 
-
-/*reccords.map(function callback(currentValue) { var x = currentValue;
-    <IconMarker/>}
-    );*/
  reccords.map(function callback(currentValue) {
     return <IconMarker 
-        lng = {currentValue.locations[0].lng}
         lat = {currentValue.locations[0].lat}
+        lng = {currentValue.locations[0].lng}
     />;
  });
