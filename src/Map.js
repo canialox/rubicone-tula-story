@@ -24,7 +24,14 @@ class Map extends React.Component {
           url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
         />
 
-        <IconMarker/>
+        <IconMarker 
+          lat
+          lng
+          onClick
+          imageURL
+          className
+          restProps
+        />
 
       </LeafletMap>
     );

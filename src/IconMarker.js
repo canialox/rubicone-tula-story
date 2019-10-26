@@ -17,11 +17,18 @@ export const IconMarker = ({
   imageURL,
   className,
   ...restProps
-}) => {
-        return (<Marker position={[lat, lng]} onClick={onClick} icon={new CustomIcon({
-            iconUrl: require('./IconMarker.png')
-        })} {...restProps} />);
-    };
+}) => (
+  <Marker
+    position={[lat, lng]}
+    onClick={onClick}
+    icon={
+      new CustomIcon({
+        iconUrl: require('./IconMarker.png')
+      })
+    }
+    {...restProps}
+  />
+);
 
  reccords.map(function callback(currentValue) {
     return <IconMarker 
