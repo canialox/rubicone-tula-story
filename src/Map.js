@@ -1,6 +1,7 @@
 import React from 'react'
-import { Map as LeafletMap, TileLayer, Marker, Popup } from 'react-leaflet';
+import { Map as LeafletMap, TileLayer, } from 'react-leaflet';
 import './Map.css';
+import { IconMarker } from './IconMarker.js'
 
 
 class Map extends React.Component {
@@ -22,19 +23,8 @@ class Map extends React.Component {
         <TileLayer
           url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
         />
-        <Marker position={[54.193122, 37.617348]}>
-          <Popup>
-          <div class="Popup-border">
-            <div class="Popup-content">
-                  <div>
-                      
-                      <p class="name">Лев Николаевич Толстой</p>
-                      <p class="age">09.09.1828 – 20.11.1910 г.</p>
-                  </div>
-            </div>
-          </div>
-          </Popup>
-        </Marker>
+
+        <IconMarker/>
       </LeafletMap>
     );
   }
