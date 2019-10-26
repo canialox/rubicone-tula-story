@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Icon } from 'leaflet';
 import { Marker } from 'react-leaflet';
+import { reccords } from './data.js'
 
 const CustomIcon = Icon.extend({
   options: {
@@ -18,7 +19,7 @@ export const IconMarker = ({
   ...restProps
 }) => (
   <Marker
-    position={[54.193122, 37.617348]}
+    position={[lng, lat]}
     onClick={onClick}
     icon={
       new CustomIcon({
@@ -28,3 +29,14 @@ export const IconMarker = ({
     {...restProps}
   />
 );
+
+
+/*reccords.map(function callback(currentValue) { var x = currentValue;
+    <IconMarker/>}
+    );*/
+ reccords.map(function callback(currentValue) {
+    return <IconMarker 
+        lng = {currentValue.locations[0].lng}
+        lat = {currentValue.locations[0].lat}
+    />;
+ });

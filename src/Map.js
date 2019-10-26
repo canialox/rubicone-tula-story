@@ -25,6 +25,7 @@ class Map extends React.Component {
         />
 
         <IconMarker/>
+
       </LeafletMap>
     );
   }
