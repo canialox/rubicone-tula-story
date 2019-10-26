@@ -10,39 +10,46 @@ html, body { /* Для всей странице по умолчанию под�
 
 /*> > > > > > > > > > > > > > > > > > > > > > > > > content / содержимое / главная страница < < < < < < < < < < < < < < < < < < < < < < <*/
 /*> > > > > > > > > > > страница-карта  < < < < < < < < < < < < < <*/
+.leaflet-container {
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+}
+
+.leaflet-top{
+  margin-top: 49vh;
+}
+
 .map-window {
   position: absolute;
   top: 0;
-  left: 100px;
-  width: 250px;
-}
-#map {
-  height: 100%;
-  width: 100%;
-  background: #fff;
+  left: 70px;
+  width: 300px;
+  z-index: 1;
 }
 
 /*------------------------------------- логотип -----------------------------*/
 .border {
-  height: 70px;
+  height: 90px;
   width: 100%;
   background: linear-gradient(22.5deg, #231a60, #be246b, #fd9e14);
-  border-radius: 0 0 15px 15px;
+  border-radius: 15px;
   text-align: center;
 }
 
 .logo {
-  height: 65px;
-  width: 240px;
-  margin: 0 5px 5px 5px;
+  position: absolute;
+  height: 80px;
+  width: 290px;
+  margin: 5px;
   background: #fff;
-  border-radius: 0 0 15px 15px;
+  border-radius: 15px;
   text-align: center;
 }
 
 
 .logo p{
-  font-size: 40px;
+  font-size: 55px;
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-weight: bold;
 
@@ -58,7 +65,7 @@ html, body { /* Для всей странице по умолчанию под�
 /*----------------------------------- Форма поиска --------------------------*/
 
 .map-window-form {
-  height: 40px;
+  height: 60px;
   width: 100%;
   margin-top: 10px;
   background: linear-gradient(22.5deg, #231a60, #be246b, #fd9e14);
@@ -70,8 +77,8 @@ padding:5px;
 }
 
 .form input[type="search"] {
-height: 30px;
-width: 240px;
+height: 50px;
+width: 290px;
 padding: 10px 40px 10px 10px;
 border-radius: 10px;
 border: none;
@@ -79,16 +86,20 @@ outline: none;
 }
 
 .form input[type="submit"] {
-height: 30px;   
-width: 30px;
+height: 50px;   
+width: 50px;
 position: relative;
-left: 210px;
-top: -30px;
+left: 240px;
+top: -50px;
 border: none;
 outline: none;
 
 background: url(https://i.ya-webdesign.com/images/search-svg-5.png) no-repeat;
-background-size: 20px 20px;
+background-size: 30px 30px;
 background-position-y: center ;
 background-position-x: center;
+}
+
+.form input[type="search"]::placeholder { 
+  font-size: 17px; 
 }

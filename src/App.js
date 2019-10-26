@@ -1,6 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import Map from './Map.js'
+
 
 function App() {
   return (
@@ -24,7 +26,7 @@ function App() {
           </div>     
         </div>
 
-          <div id="map"></div>
+        <Map></Map>
       </div>
     </div>
   );
