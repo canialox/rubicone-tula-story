@@ -19,11 +19,7 @@ class Map extends React.Component {
     }
   }
 
-
-
-
   render() {
-
     const filteredRecords = this.state.records.filter((record) => {
       if (record.name.toLowerCase().indexOf(this.state.searchValue) != -1) {
         return true;
@@ -34,12 +30,8 @@ class Map extends React.Component {
     return (
       <>
         <div class="map-window-form">
-          <form class="form">
-            <p>
-              <input type="search" name="search" placeholder="Поиск по сайту" onChange={this.onFilterChange} />
-              <input type="submit" value=""/>
-            </p>
-          </form>
+              <input name="search" placeholder="Поиск по сайту" onChange={this.onFilterChange} />
+              <img src="https://i.ya-webdesign.com/images/search-svg-5.png"/>
         </div>     
           
 

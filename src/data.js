@@ -1,3 +1,7 @@
+  // const records_public = {
+  //   (records.locations.map()
+  // }
+  
   export const records = [
     {
     id: 0,
