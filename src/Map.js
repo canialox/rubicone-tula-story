@@ -1,6 +1,5 @@
 import React from 'react'
-import { Map as LeafletMap, TileLayer, } from 'react-leaflet';
-import './Map.css';
+import { Map as LeafletMap, TileLayer } from 'react-leaflet';
 import { IconMarker } from './IconMarker.js'
 import { reccords } from './data.js'
 
@@ -13,9 +12,9 @@ class Map extends React.Component {
     return (
       <LeafletMap
         center={[54.193122, 37.617348]}
-        zoom={17}
-        maxZoom={21}
-        minZoom={14}
+        zoom={14}
+        minZoom={13}
+        maxZoom={19}
         attributionControl={true}
         zoomControl={true}
         doubleClickZoom={true}

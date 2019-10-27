@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Icon } from 'leaflet';
 import { Marker } from 'react-leaflet';
-import { reccords } from './data.js'
 
 const CustomIcon = Icon.extend({
   options: {
