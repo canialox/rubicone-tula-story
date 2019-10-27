@@ -2,7 +2,11 @@ import React from 'react'
 import { Map as LeafletMap, TileLayer, } from 'react-leaflet';
 import './Map.css';
 import { IconMarker } from './IconMarker.js'
+import { reccords } from './data.js'
 
+export const reccord = reccords.map(function callback(currentValue) {
+  return <IconMarker lat = {currentValue.locations[0].lat}lng = {currentValue.locations[0].lng}/>;
+});
 
 class Map extends React.Component {
   render() {
@@ -10,7 +14,7 @@ class Map extends React.Component {
       <LeafletMap
         center={[54.193122, 37.617348]}
         zoom={17}
-        maxZoom={19}
+        maxZoom={21}
         minZoom={14}
         attributionControl={true}
         zoomControl={true}
@@ -24,14 +28,7 @@ class Map extends React.Component {
           url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
         />
 
-        <IconMarker 
-          lat
-          lng
-          onClick
-          imageURL
-          className
-          restProps
-        />
+        {reccord}
 
       </LeafletMap>
     );

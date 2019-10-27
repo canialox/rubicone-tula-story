@@ -29,10 +29,3 @@ export const IconMarker = ({
     {...restProps}
   />
 );
-
- reccords.map(function callback(currentValue) {
-    return <IconMarker 
-        lat = {currentValue.locations[0].lat}
-        lng = {currentValue.locations[0].lng}
-    />;
- });
