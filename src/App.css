@@ -3,11 +3,6 @@
   margin: 0px;
 }
 
-html, body { /* Для всей странице по умолчанию подключаем шрифт, высоту и цвет фона */
-  font-family: "Segoe UI", Arial, sans-serif;
-  height: 100%;
-}
-
 /*> > > > > > > > > > > > > > > > > > > > > > > > > content / содержимое / главная страница < < < < < < < < < < < < < < < < < < < < < < <*/
 /*> > > > > > > > > > > страница-карта  < < < < < < < < < < < < < <*/
 .leaflet-container {
@@ -38,7 +33,7 @@ html, body { /* Для всей странице по умолчанию под�
 }
 
 .logo {
-  position: absolute;
+  position: fixed;
   height: 80px;
   width: 290px;
   margin: 5px;
@@ -54,7 +49,7 @@ html, body { /* Для всей странице по умолчанию под�
   font-weight: bold;
 
   background: linear-gradient(90deg, #231a60, #be246b, #fd9e14);
-  background-clip: text;  /* подробнее про background-clip */ 
+  background-clip: text;  
   -webkit-background-clip: text;
   color: transparent;
   display: inline-block;
@@ -65,11 +60,15 @@ html, body { /* Для всей странице по умолчанию под�
 /*----------------------------------- Форма поиска --------------------------*/
 
 .map-window-form {
+  position: fixed;
+  top: 90px;
   height: 60px;
-  width: 100%;
+  left: 70px;
+  width: 300px;
   margin-top: 10px;
   background: linear-gradient(22.5deg, #231a60, #be246b, #fd9e14);
   border-radius: 15px;
+  z-index: 1;
 }   
 
 .form {

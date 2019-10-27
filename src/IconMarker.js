@@ -12,10 +12,10 @@ const CustomIcon = Icon.extend({
 export const IconMarker = ({
   lat,
   lng,
-  onClick,
-  imageURL,
-  className,
-  ...restProps
+  onClick
+  // imageURL,
+  // className,
+
 }) => (
   <Marker
     position={[lat, lng]}
@@ -25,6 +25,5 @@ export const IconMarker = ({
         iconUrl: require('./IconMarker.png')
       })
     }
-    {...restProps}
   />
 );

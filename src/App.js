@@ -14,19 +14,10 @@ function App() {
             <div class="logo">
                   <p>TulStory</p>
             </div>
-          </div>
-
-          <div class="map-window-form">
-            <form class="form">
-              <p>
-                <input type="search" name="search" placeholder="Поиск по сайту"/>
-                <input type="submit" value=""/>
-              </p>
-            </form>
-          </div>     
+          </div>   
         </div>
 
-        <Map></Map>
+        <Map/>
       </div>
     </div>
   );
