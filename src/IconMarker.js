@@ -33,9 +33,9 @@ export const IconMarker = ({
   >
     <Popup>
       <div class="name">{name}</div>
-      <div class="info">{info}</div>
-      <div class="image"><img crs={image}/></div>
       <div class="age">{age}</div>
+      <div class="image"><img src={image}/></div>
+      <div class="info">{info}</div>
       <div class="adress">{address}</div>
       <div class="adress-info">{address_info}</div>
     </Popup>
