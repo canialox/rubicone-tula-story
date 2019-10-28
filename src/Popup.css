@@ -1,0 +1,66 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+
+.leaflet-popup {               /* блок с popup */
+    margin-bottom: 60px;
+    margin-left:145px;
+    width: 350px;
+}
+
+
+/*--------------------- Блок popup -------------------------*/
+.leaflet-popup-content-wrapper {
+    background: linear-gradient(100deg, #231a60, #be246b, #fd9e14);
+}
+
+.leaflet-popup-content {
+    background: #fff;
+    margin: 5px;
+    border-radius: 5px;
+    width: 338px !important;
+}
+
+/*--------------------- указатель на метку --------------------*/
+.leaflet-popup-tip-container{
+    left: 30.2px;
+}
+.leaflet-popup-tip{
+    background: linear-gradient(90deg, #231a60, #461a60, #8524be);
+}
+
+/*------------------------ крестик закрытия окна -------------------------*/
+.leaflet-popup-close-button {
+    margin: 2px 1.5px 0 0;
+}
+
+
+/*--------------------------------------------------------------------------------*/
+/*---------------------------- Мобильная ерсия -------------------------------*/
+
+@media only screen and (max-width:  480px) {
+
+.leaflet-popup {               /* блок с popup */
+    margin-bottom: 60px;
+    margin-left:0;
+    width: 310px;
+}
+
+/*--------------------- Блок popup -------------------------*/
+.leaflet-popup-content {
+    width: 298px !important;
+}
+
+/*--------------------- указатель на метку --------------------*/
+.leaflet-popup-tip-container{
+    left: 50%;
+}
+
+/*------------------------ крестик закрытия окна -------------------------*/
+.leaflet-popup-close-button {
+    margin: 2px 1.5px 0 0;
+}
+
+
+}

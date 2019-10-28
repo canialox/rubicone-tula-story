@@ -52,7 +52,7 @@ class Map extends React.Component {
             url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
           />
           {filteredRecords.map(function callback(currentValue) {
-            return <IconMarker lat={currentValue.location.lat}lng={currentValue.location.lng}/>;
+            return <IconMarker lat={currentValue.location.lat}lng={currentValue.location.lng}name={currentValue.name}info={currentValue.info}image={currentValue.image}age={currentValue.age}address={currentValue.address}address_info={currentValue.address_info}/>;
           })}
         </LeafletMap>
       </>

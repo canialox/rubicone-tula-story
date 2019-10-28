@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Icon } from 'leaflet';
 import { Marker } from 'react-leaflet';
 import {  Popup } from 'react-leaflet';
+import './Popup.css';
 
 const CustomIcon = Icon.extend({
   options: {
@@ -13,10 +14,13 @@ const CustomIcon = Icon.extend({
 export const IconMarker = ({
   lat,
   lng,
+  name,
+  info,
+  image,
+  age,
+  address,
+  address_info,
   onClick
-  // imageURL,
-  // className,
-
 }) => (
   <Marker
     position={[lat, lng]}
@@ -28,7 +32,12 @@ export const IconMarker = ({
     }
   >
     <Popup>
-      Popup for any custom information.
+      <div class="name">{name}</div>
+      <div class="info">{info}</div>
+      <div class="image"><img crs={image}/></div>
+      <div class="age">{age}</div>
+      <div class="adress">{address}</div>
+      <div class="adress-info">{address_info}</div>
     </Popup>
   </Marker>
 );
