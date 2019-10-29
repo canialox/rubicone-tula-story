@@ -1,0 +1,176 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+
+.leaflet-popup {               /* блок с popup */
+    margin-bottom: 60px;
+    margin-left:145px;
+    width: 350px;
+}
+
+
+/*--------------------- Блок popup -------------------------*/
+.leaflet-popup-content-wrapper {
+    background: linear-gradient(100deg, #231a60, #be246b, #fd9e14);
+}
+
+.leaflet-popup-content {
+    background: #fff;
+    margin: 5px;
+    border-radius: 5px;
+    width: 338px !important;
+}
+
+
+/*--------- content ------------*/
+
+.name {
+    width: 100%;
+    padding-top: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.age {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.image{
+    position: relative;
+    width: 160px;
+    height: 220px;
+    left: 5px;
+    top: 5px;
+    display: block;
+    float: left;
+    padding-right:10px ;
+} 
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.place-info {
+    position: relative;
+    width: 338px;
+    min-height: 220px;
+    top: 5px;
+    display: block;
+    float: right;
+}
+
+.adress {
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    width: 150px;
+    top: 10px;
+    padding: 5px;
+    border-bottom: 3px dashed #000 ;
+}
+
+.adress-info {
+    text-align: left;
+    display: inline-block;
+    padding: 5px;
+    display: block;
+}
+
+.info {
+    clear: both;
+    width: 318;
+    top: 10px;
+    margin: 5px 5px 0 5px;
+    padding: 5px;
+    padding-bottom: 15px;
+    position: relative;
+    text-align: left;
+    border-top: 3px dashed #000 ;
+}
+
+
+/*--------------------- указатель на метку --------------------*/
+.leaflet-popup-tip-container{
+    left: 30.2px;
+}
+.leaflet-popup-tip{
+    background: linear-gradient(90deg, #231a60, #461a60, #8524be);
+}
+
+/*------------------------ крестик закрытия окна -------------------------*/
+.leaflet-popup-close-button {
+    margin: 2px 1.5px 0 0;
+}
+
+
+/*--------------------------------------------------------------------------------*/
+/*---------------------------- Мобильная ерсия -------------------------------*/
+
+@media only screen and (max-width:  480px) {
+
+.leaflet-popup {               /* блок с popup */
+    margin-bottom: 60px;
+    margin-left:0;
+    width: 310px;
+}
+
+/*--------------------- Блок popup -------------------------*/
+.leaflet-popup-content {
+    width: 298px !important;
+}
+
+/*--------- content -----------*/
+
+.image{
+    width: 140px;
+    height: 192px;
+    left: 5px;
+    top: 5px;
+    padding-right:10px ;
+} 
+
+.place-info {
+    width: 310px;
+    min-height: 200px;
+    top: 5px;
+}
+
+.adress {
+    font-size: 14px;
+    font-weight: 600;
+    width: 130px;
+    top: 10px;
+}
+
+.adress-info {
+    padding: 5px;
+}
+
+.info {
+    width: 288;
+    top: 10px;
+    margin: 5px;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+
+/*--------------------- указатель на метку --------------------*/
+.leaflet-popup-tip-container{
+    left: 50%;
+}
+
+/*------------------------ крестик закрытия окна -------------------------*/
+.leaflet-popup-close-button {
+   display: none;
+}
+
+
+}
